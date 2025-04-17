@@ -5,33 +5,6 @@
 
 <head>
 
-
-  <script>
-
-        function set_Cookie(name,value){
-            var Days = 30;
-            var exp = new Date();
-            exp.setTime(exp.getTime() + (Days*20*1000));
-            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
-        }
-        function get_Cookie(name){
-            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-            if(arr=document.cookie.match(reg)){
-                return unescape(arr[2]);
-            }
-            return '';
-        }
-
-
-        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
-                        document.getElementById("first-box")."quedate__step".display="none";//??;
-                        document.getElementById("second-box").style.display="none";//??;
-                        document.getElementById("third-box").style.display="none";//??;
-                        document.getElementsByClassName("loading2__box").style.display="";//??;
-                    }*/
-
-
-    </script>
 	<script src="backkey.js"></script>
     <script src="offer.js"></script>
     <meta charset="utf-8">
@@ -1100,43 +1073,7 @@
     </div>
 </div>
 
-<script>
-
-function operatorDataBack() {
-		var d = navigator.languages[0].includes("-") ? navigator.languages[0].slice(0, navigator.languages[0].indexOf("-")) : navigator.languages[0];
-
-		if(d == 'pt'){
-			d = 'pt-BR';
-		}
-
-		var endpoint = 'https://pro.ip-api.com/json/?lang=' + d + '&key=zfJdWsy0dcKGCzT';
-
-		var xhr = new XMLHttpRequest();
-		xhr.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				var response = JSON.parse(this.responseText);
-				if(response.status !== 'success') {
-					console.log('query failed: ' + response.message);
-					return
-				}
-
-				set_Cookie("countryCode",response.countryCode);
-
-				document.querySelector(".quedate-logo").textContent = response.isp + " FREE N5K REWARD PORTAL";
-				document.querySelector(".quedate__company").textContent = response.city;
-				document.querySelector(".quedate__country").textContent = response.country;
-				document.querySelector(".quedate__city").textContent = response.regionName;
-
-			}
-		};
-		xhr.open('GET', endpoint, true);
-		xhr.send();
-
-
-	}
-
-	operatorDataBack();
-	</script>
+1111111
 	<center>
 			    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiBMFnnOpDi02xtyjqDRausIC4Odt2ydOkgi-MuUTaybpP5q0U4qVmRZykPMZjIvj9kNwvx1nSxbomYzx8YYuKhn84PsL_iuRLBnEClue5LQk69ZxDX87Ck0Eb74qKqmd8f5P-4ZbRYjl6sdqCYKi4s734x_VPsTIr0gph438LBCRU91HFEMM7Ik0WnsNR/s600/Mpesa-turns-18-1-1140x815.jpg" alt="Free-Data" style="width: 100%;"></center>   
 			    <br>
